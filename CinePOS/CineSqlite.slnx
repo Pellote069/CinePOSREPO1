@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="../CapaData/CapaData.csproj" Id="c8c19c2a-9b63-434b-8c9e-aaf1a6a8ee72" />
+  <Project Path="../CapaEntidad/CapaEntidad.csproj" Id="5bc41d94-a97e-40ee-a26b-1474149d6917" />
+  <Project Path="../CapaNegocio/CapaNegocio.csproj" Id="2393e661-5f04-4a24-a4c4-82a600a16bef" />
+  <Project Path="CinePOS.csproj" Id="475b9218-efb7-4de7-916f-84b233f93dc7" />
+</Solution>

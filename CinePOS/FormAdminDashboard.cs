@@ -1,0 +1,67 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace CinePOS
+{
+    public partial class FormAdminDashboard : Form
+    {
+        public FormAdminDashboard()
+        {
+            InitializeComponent();
+        }
+
+
+        private void AbrirFormPanel(object formhijo) // creamos este metodo para abrir cualquier form
+        {
+            if(this.panelContenedor.Controls.Count > 0)
+            {
+                this.panelContenedor.Controls.RemoveAt(0);
+            }
+
+            Form fh = formhijo as Form; // inicializamos el objeto metido en el metodo(formhijo) 
+            fh.TopLevel = false; // para que sea una ventana metoda en el panellcontenedor blanco y no una ventana aparte
+            fh.FormBorderStyle = FormBorderStyle.None; // quitamos borde
+            fh.Dock = DockStyle.Fill; // para que aproveche todo el espacio 
+
+            this.panelContenedor.Controls.Add(fh);
+
+            this.panelContenedor.Tag = fh;
+
+            fh.Show();
+
+
+        }
+
+        // aqui solo agregamos los botones que agregamos en el diseñador grafico, les añadimos su evento y usamos el metodo creado para abrir los formsdentro del panel contenedor 
+
+        private void btnPelis_Click(object sender, EventArgs e)
+        {
+            AbrirFormPanel(new FormGestionPeliculas());
+
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AbrirFormPanel(new FormGestionSalas());
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AbrirFormPanel(new FormGestionFunciones());
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AbrirFormPanel(new FormCartelera());
+        }
+    }
+}

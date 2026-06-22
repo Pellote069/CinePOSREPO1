@@ -14,7 +14,9 @@ namespace CinePOS
 {
     public partial class FormAdminLogin : Form
     {
-        UsuarioNegocio objNegocio = new UsuarioNegocio(); // con este metodo tenemos aacceso a los metodos de validacion
+        UsuarioNegocio objNegocio = new UsuarioNegocio();// con este metodo tenemos aacceso a los metodos de validacion
+
+        public string usuariologueado { get; private set; }
         public FormAdminLogin()
         {
             InitializeComponent();
@@ -44,7 +46,9 @@ namespace CinePOS
 
             if(rol == "Admin")
             {
+                usuariologueado = txtUsuario.Text;
                 this.DialogResult = DialogResult.OK;
+
                 
             }
 
@@ -75,6 +79,19 @@ namespace CinePOS
         private void txtPassword_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void ChecCaracteres_CheckedChanged(object sender, EventArgs e)
+        {
+            if(txtPassword.UseSystemPasswordChar == true)
+            {
+                txtPassword.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtPassword.UseSystemPasswordChar = true;
+            }
+            
         }
     }
 }

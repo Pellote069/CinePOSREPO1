@@ -33,10 +33,10 @@
             this.flpMapaAsientos = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -99,24 +99,16 @@
             this.panel1.Size = new System.Drawing.Size(770, 100);
             this.panel1.TabIndex = 5;
             // 
-            // panel2
+            // label4
             // 
-            this.panel2.Controls.Add(this.flpMapaAsientos);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 100);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(770, 342);
-            this.panel2.TabIndex = 6;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(640, 9);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Listo";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Gray;
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label4.Location = new System.Drawing.Point(43, 43);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(91, 16);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Deshabilitado";
             // 
             // label3
             // 
@@ -129,22 +121,31 @@
             this.label3.Text = "Habilitado";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // button1
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Gray;
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(43, 43);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 16);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Deshabilitado";
+            this.button1.Location = new System.Drawing.Point(640, 9);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(118, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Listo";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.AutoScroll = true;
+            this.panel2.Controls.Add(this.flpMapaAsientos);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 100);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(770, 506);
+            this.panel2.TabIndex = 6;
             // 
             // FormAdminAsientos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(770, 442);
+            this.ClientSize = new System.Drawing.Size(770, 606);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;

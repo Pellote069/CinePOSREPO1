@@ -12,15 +12,20 @@ namespace CinePOS
 {
     public partial class FormAdminDashboard : Form
     {
+        public string usuariologueado { get;set; }
+
         public FormAdminDashboard()
         {
             InitializeComponent();
+            label2.Text = "Bienvenido: " + usuariologueado;
         }
 
 
         private void AbrirFormPanel(object formhijo) // creamos este metodo para abrir cualquier form
         {
-            if(this.panelContenedor.Controls.Count > 0)
+
+           
+            if (this.panelContenedor.Controls.Count > 0)
             {
                 this.panelContenedor.Controls.RemoveAt(0);
             }
@@ -48,20 +53,47 @@ namespace CinePOS
 
         }
 
+
         private void button1_Click(object sender, EventArgs e)
         {
             AbrirFormPanel(new FormGestionSalas());
 
         }
 
+
         private void button2_Click(object sender, EventArgs e)
         {
             AbrirFormPanel(new FormGestionFunciones());
         }
 
+
         private void button3_Click(object sender, EventArgs e)
         {
             AbrirFormPanel(new FormCartelera());
+        }
+
+
+        // estos dos penultimos eventos son para cerrar la aplicacion definitivamente
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void FormAdminDashboard_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+        // para agregar el texto del usuario en el label
+        private void FormAdminDashboard_Load(object sender, EventArgs e)
+        {
+            label2.Text = "Bienvenido: " + usuariologueado;
+
         }
     }
 }

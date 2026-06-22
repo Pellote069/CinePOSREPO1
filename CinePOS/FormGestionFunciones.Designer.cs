@@ -86,7 +86,8 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Location = new System.Drawing.Point(729, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(115, 16);
@@ -96,7 +97,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(231, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(110, 16);
@@ -107,7 +109,8 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(441, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(122, 16);
@@ -127,9 +130,10 @@
             // txtBuscador
             // 
             this.txtBuscador.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtBuscador.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtBuscador.Location = new System.Drawing.Point(381, 44);
             this.txtBuscador.Name = "txtBuscador";
-            this.txtBuscador.Size = new System.Drawing.Size(246, 22);
+            this.txtBuscador.Size = new System.Drawing.Size(246, 15);
             this.txtBuscador.TabIndex = 2;
             // 
             // cmbSelectorSala

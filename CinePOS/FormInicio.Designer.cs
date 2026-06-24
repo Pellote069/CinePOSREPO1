@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormInicio));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnAdmin = new System.Windows.Forms.Button();
             this.btnCliente = new System.Windows.Forms.Button();
+            this.btnAdmin = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,23 +47,9 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(702, 308);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(748, 336);
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
-            // 
-            // btnAdmin
-            // 
-            this.btnAdmin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdmin.BackgroundImage")));
-            this.btnAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAdmin.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnAdmin.Location = new System.Drawing.Point(328, 3);
-            this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(371, 302);
-            this.btnAdmin.TabIndex = 1;
-            this.btnAdmin.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.btnAdmin.UseVisualStyleBackColor = true;
-            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
             // btnCliente
             // 
@@ -73,15 +59,29 @@
             this.btnCliente.Location = new System.Drawing.Point(3, 3);
             this.btnCliente.Name = "btnCliente";
             this.btnCliente.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnCliente.Size = new System.Drawing.Size(319, 302);
+            this.btnCliente.Size = new System.Drawing.Size(365, 330);
             this.btnCliente.TabIndex = 0;
             this.btnCliente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnCliente.UseVisualStyleBackColor = true;
             this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
             // 
+            // btnAdmin
+            // 
+            this.btnAdmin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdmin.BackgroundImage")));
+            this.btnAdmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAdmin.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnAdmin.Location = new System.Drawing.Point(374, 3);
+            this.btnAdmin.Name = "btnAdmin";
+            this.btnAdmin.Size = new System.Drawing.Size(371, 330);
+            this.btnAdmin.TabIndex = 1;
+            this.btnAdmin.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.btnAdmin.UseVisualStyleBackColor = true;
+            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
+            // 
             // FormInicio
             // 
-            this.ClientSize = new System.Drawing.Size(702, 308);
+            this.ClientSize = new System.Drawing.Size(748, 336);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FormInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

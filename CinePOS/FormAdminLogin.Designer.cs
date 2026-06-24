@@ -38,7 +38,6 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ChecCaracteres = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,11 +51,10 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(312, 134);
+            this.txtPassword.Location = new System.Drawing.Point(312, 149);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(216, 22);
             this.txtPassword.TabIndex = 1;
-            this.txtPassword.UseSystemPasswordChar = true;
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // label1
@@ -84,7 +82,7 @@
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(99, 39);
             this.btnIngresar.TabIndex = 4;
-            this.btnIngresar.Text = "Ingresar";
+            this.btnIngresar.Text = "Ingrear";
             this.btnIngresar.UseVisualStyleBackColor = true;
             this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
@@ -109,28 +107,16 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(260, 247);
+            this.pictureBox1.Size = new System.Drawing.Size(283, 247);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
-            // 
-            // ChecCaracteres
-            // 
-            this.ChecCaracteres.AutoSize = true;
-            this.ChecCaracteres.Location = new System.Drawing.Point(312, 163);
-            this.ChecCaracteres.Name = "ChecCaracteres";
-            this.ChecCaracteres.Size = new System.Drawing.Size(143, 20);
-            this.ChecCaracteres.TabIndex = 7;
-            this.ChecCaracteres.Text = "Mostrar Caracteres";
-            this.ChecCaracteres.UseVisualStyleBackColor = true;
-            this.ChecCaracteres.CheckedChanged += new System.EventHandler(this.ChecCaracteres_CheckedChanged);
             // 
             // FormAdminLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(582, 253);
-            this.Controls.Add(this.ChecCaracteres);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnIngresar);
@@ -142,7 +128,6 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormAdminLogin";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormAdminLogin";
             this.Load += new System.EventHandler(this.FormAdminLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -161,6 +146,5 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.CheckBox ChecCaracteres;
     }
 }

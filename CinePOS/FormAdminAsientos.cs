@@ -23,7 +23,7 @@ namespace CinePOS
             CentrarMapa();
         }
 
-        private void CentrarMapa()
+        public void CentrarMapa()
         {
             // calcular las coordenadas x,y para que el mapa de los asientos quede en medio
             int x = (panel2.Width - flpMapaAsientos.Width) / 2;
@@ -68,7 +68,7 @@ namespace CinePOS
                 btn.Tag = a;
 
                 // para los colores segun el estado 
-                btn.BackColor = (a.Estado == 1) ? Color.Gray : Color.Green;
+                btn.BackColor = (a.Estado == 1) ? Color.Gray : Color.Lime;
 
                 btn.Click += (s, e) => {
                     Asiento asientoSeleccionado = (Asiento)((Button)s).Tag;

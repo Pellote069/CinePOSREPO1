@@ -45,18 +45,20 @@
             // 
             this.cmbSala.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cmbSala.FormattingEnabled = true;
-            this.cmbSala.Location = new System.Drawing.Point(321, 35);
+            this.cmbSala.Location = new System.Drawing.Point(441, 52);
+            this.cmbSala.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbSala.Name = "cmbSala";
-            this.cmbSala.Size = new System.Drawing.Size(119, 24);
+            this.cmbSala.Size = new System.Drawing.Size(162, 32);
             this.cmbSala.TabIndex = 0;
             this.cmbSala.SelectedIndexChanged += new System.EventHandler(this.cmbSala_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.Location = new System.Drawing.Point(238, 9);
+            this.label1.Location = new System.Drawing.Point(327, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(282, 23);
+            this.label1.Size = new System.Drawing.Size(388, 34);
             this.label1.TabIndex = 1;
             this.label1.Text = "Seleccione sala";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -65,10 +67,11 @@
             // 
             this.flpMapaAsientos.AutoScroll = true;
             this.flpMapaAsientos.AutoSize = true;
-            this.flpMapaAsientos.Location = new System.Drawing.Point(286, 89);
+            this.flpMapaAsientos.Location = new System.Drawing.Point(393, 134);
+            this.flpMapaAsientos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flpMapaAsientos.Name = "flpMapaAsientos";
-            this.flpMapaAsientos.Padding = new System.Windows.Forms.Padding(20);
-            this.flpMapaAsientos.Size = new System.Drawing.Size(197, 111);
+            this.flpMapaAsientos.Padding = new System.Windows.Forms.Padding(28, 30, 28, 30);
+            this.flpMapaAsientos.Size = new System.Drawing.Size(271, 166);
             this.flpMapaAsientos.TabIndex = 2;
             // 
             // label2
@@ -77,9 +80,10 @@
             this.label2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(0, 75);
+            this.label2.Location = new System.Drawing.Point(0, 112);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(770, 25);
+            this.label2.Size = new System.Drawing.Size(1059, 38);
             this.label2.TabIndex = 4;
             this.label2.Text = "Pantalla";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -95,8 +99,9 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(770, 100);
+            this.panel1.Size = new System.Drawing.Size(1059, 150);
             this.panel1.TabIndex = 5;
             // 
             // label4
@@ -104,9 +109,10 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Gray;
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(43, 43);
+            this.label4.Location = new System.Drawing.Point(59, 64);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 16);
+            this.label4.Size = new System.Drawing.Size(130, 25);
             this.label4.TabIndex = 7;
             this.label4.Text = "Deshabilitado";
             // 
@@ -114,18 +120,20 @@
             // 
             this.label3.BackColor = System.Drawing.Color.Lime;
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(43, 15);
+            this.label3.Location = new System.Drawing.Point(59, 22);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 17);
+            this.label3.Size = new System.Drawing.Size(125, 26);
             this.label3.TabIndex = 6;
             this.label3.Text = "Habilitado";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(640, 9);
+            this.button1.Location = new System.Drawing.Point(880, 14);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 23);
+            this.button1.Size = new System.Drawing.Size(162, 34);
             this.button1.TabIndex = 5;
             this.button1.Text = "Listo";
             this.button1.UseVisualStyleBackColor = true;
@@ -133,21 +141,22 @@
             // 
             // panel2
             // 
-            this.panel2.AutoScroll = true;
             this.panel2.Controls.Add(this.flpMapaAsientos);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 100);
+            this.panel2.Location = new System.Drawing.Point(0, 150);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(770, 506);
+            this.panel2.Size = new System.Drawing.Size(1059, 513);
             this.panel2.TabIndex = 6;
             // 
             // FormAdminAsientos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(770, 606);
+            this.ClientSize = new System.Drawing.Size(1059, 663);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "FormAdminAsientos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

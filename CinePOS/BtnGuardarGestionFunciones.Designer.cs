@@ -80,7 +80,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(382, 38);
+            this.label2.Location = new System.Drawing.Point(282, 38);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(134, 20);
             this.label2.TabIndex = 5;
@@ -105,9 +105,9 @@
             // cmbSala
             // 
             this.cmbSala.FormattingEnabled = true;
-            this.cmbSala.Location = new System.Drawing.Point(386, 79);
+            this.cmbSala.Location = new System.Drawing.Point(286, 76);
             this.cmbSala.Name = "cmbSala";
-            this.cmbSala.Size = new System.Drawing.Size(130, 28);
+            this.cmbSala.Size = new System.Drawing.Size(223, 28);
             this.cmbSala.TabIndex = 1;
             // 
             // cmbPelicula
@@ -115,7 +115,7 @@
             this.cmbPelicula.FormattingEnabled = true;
             this.cmbPelicula.Location = new System.Drawing.Point(23, 76);
             this.cmbPelicula.Name = "cmbPelicula";
-            this.cmbPelicula.Size = new System.Drawing.Size(299, 28);
+            this.cmbPelicula.Size = new System.Drawing.Size(186, 28);
             this.cmbPelicula.TabIndex = 0;
             // 
             // BtnGuardarGestionFunciones

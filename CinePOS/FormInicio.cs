@@ -36,7 +36,6 @@ namespace CinePOS
                 MessageBox.Show("No se pudo conectar a la base de datos SQLite. Revisa la ruta o el archivo.", "Error de Conexión", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -53,21 +52,12 @@ namespace CinePOS
         {
             FormAdminLogin login = new FormAdminLogin(); // inicializamos el form para hacer el login en la base de datos 
 
-
-            this.Hide(); //solo se oculta, falta añador el aplication.close() en FormDashboard
-
-
+            this.Hide(); //solo se oculta, falta añador el aplication.close()
 
             // i el usuario se loguea correctamenteabrimos el panel de 
-
             if (login.ShowDialog() == DialogResult.OK)
             {
                 FormAdminDashboard admin = new FormAdminDashboard();
-
-                admin.usuariologueado = login.usuariologueado; // transferimos la informacion del login validada(el nombre del usuario como esta en la DB) a la propuedad que esta en FormAdminDashboard
-
-                
-             
 
                 admin.Show();
                 
